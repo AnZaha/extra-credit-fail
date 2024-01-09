@@ -83,7 +83,7 @@ function generateRaffles(size: number, min_value: number = 1, max_value: number 
 let num_of_raffles = 20
 let raffles: number[] = generateRaffles(num_of_raffles);
 game.splash("Original List:" + raffles.join(", "))
-let goalNumber = game.askForNumber("Enter Goal Number", 5)
+let goalNumber = game.askForNumber("Enter Number", 5)
 let masks2 = generateBinaryMasks(num_of_raffles)
 let sums = applyMasksToList(raffles, masks2)
 let minimums = getMinimumIndices(sums, goalNumber)
